@@ -33,9 +33,7 @@ public class EditSubtitle extends HttpServlet {
         this.DaoTraduction = daoFactory.getTraductionDao();
     }
 	 
-	
-	
-	
+		
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ServletContext context = getServletContext();
 		System.out.println(context.getRealPath(FILE_NAME));
@@ -73,33 +71,16 @@ public class EditSubtitle extends HttpServlet {
 			
 			 
 			  
-			}
-	 
-		 	
-		 
-		 
-		 
-			  
-					 tTS.setTranslatedSubtitles(list);
+}	  
+	      tTS.setTranslatedSubtitles(list);
 					// DaoTraduction.ajouterTraduction(tTS);
+		DaoTraduction.update(tTS);
+		System.out.println("check affiche "+DaoTraduction.afficher());
 					 
-				 
-				 
-					DaoTraduction.update(tTS);
-					System.out.println("check affiche "+DaoTraduction.afficher());
-					 
-				 
-				 
-   
-		
-	
-					request.setAttribute("subtitles", tabOS.getSubtitles());
+		request.setAttribute("subtitles", tabOS.getSubtitles());
 	 
 		this.getServletContext().getRequestDispatcher("/WEB-INF/edit_subtitle.jsp").forward(request, response);
 			
 		} 
-		
-	 
-	 
-
+	
 }
