@@ -1,5 +1,9 @@
 package classMetier;
+<<<<<<< Updated upstream
 /*COMMIT TO GIT	*/
+=======
+/*MASTER*/
+>>>>>>> Stashed changes
 public abstract class AbstractText {
 		
 String textTitle;
