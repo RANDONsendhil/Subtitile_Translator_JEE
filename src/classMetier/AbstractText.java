@@ -1,5 +1,5 @@
 package classMetier;
-
+/*COMMIT TO GIT	*/
 public abstract class AbstractText {
 		
 String textTitle;
