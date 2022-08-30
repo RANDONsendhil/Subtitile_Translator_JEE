@@ -1,8 +1,12 @@
 package classMetier;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /*COMMIT TO GIT	*/
 =======
 /*MASTER*/
+>>>>>>> Stashed changes
+=======
+/*COMMIT TO GIT ANOTHER */
 >>>>>>> Stashed changes
 public abstract class AbstractText {
 		
