@@ -1,5 +1,5 @@
 package classMetier;
-
+/*MASTER*/
 public abstract class AbstractText {
 		
 String textTitle;
